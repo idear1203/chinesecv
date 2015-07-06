@@ -1,0 +1,157 @@
+%!TEX TS-program = xelatex
+\documentclass[]{friggeri-cv}
+\usepackage{afterpage}
+\usepackage{hyperref}
+\usepackage{color}
+\usepackage{xcolor}
+
+\hypersetup{
+    pdftitle={},
+    pdfauthor={},
+    pdfsubject={},
+    pdfkeywords={},
+    colorlinks=false,       % no lik border color
+   allbordercolors=white    % white border color for all
+}
+\addbibresource{bibliography.bib}
+\RequirePackage{xcolor}
+\definecolor{pblue}{HTML}{0395DE}
+
+\begin{document}
+\header{I}{DEAR}
+      {硕士研究生}
+      
+% Fake text to add separator      
+\fcolorbox{white}{gray}{\parbox{\dimexpr\textwidth-2\fboxsep-2\fboxrule}{%
+.....
+}}
+
+% In the aside, each new line forces a line break
+\begin{aside}
+  \section{现居地址}
+    北京大学45乙楼
+    北京市海淀区
+    颐和园路5号%，100871
+    ~
+  \section{手机号码}
+    110120119
+    ~
+  \section{电子邮箱}
+    \href{mailto:wangdongwei@pku.edu.cn}{\textbf{wangdongwei@}\\pku.edu.cn}
+    \href{mailto:wangdongwei1203@gmail.com}{\textbf{wangdongwei1203@}\\gmail.com}
+    ~
+  \section{Git}
+    %需要考虑创建个网址
+    \href{https://github.com/idear1}{github.com/idear1}
+    ~
+  \section{编程语言}
+    ~
+    \includegraphics[scale=0.7]{img/programming.png}
+    ~
+  \section{操作系统偏好}
+    \textbf{MacOS}\includegraphics[scale=0.40]{img/5stars.png}
+    \textbf{GNU/Linux}\includegraphics[scale=0.40]{img/4stars.png}
+    \textbf{Windows}\includegraphics[scale=0.40]{img/1stars.png}
+    ~
+  \section{语言能力}
+    \textbf{英语}\includegraphics[scale=0.40]{img/4stars.png}
+    ~
+\end{aside}
+
+\section{教育经历}
+\begin{entrylist}
+  \entry
+    {14/09 至今}
+    {软件工程专业,学术型硕士研究生（首批）}
+    {北京大学}
+    {研究方向：信息安全与软件保障\\
+    主要课程：软件分析技术， 软件设计模式，软件工程前沿专题，高级编译技术\\
+    }
+  \entry
+    {10/09 - 14/06}
+    {网络工程专业，工科学士学位}
+    {北京邮电大学}
+    {
+    主要课程： 数据结构，操作系统，计算机网络，数据库技术，Unix实用编程
+    }
+\end{entrylist}
+
+\section{工作经历}
+\begin{entrylist}
+  \entry
+    {13/09 至今 }
+    {程序猿}
+    {某中心}
+    {吃\\
+    喝\\
+    玩\\
+    乐\\}
+
+  \entry
+    {11/10 - 12/07}
+    {码农}
+    {某实验室}
+    {打杂\\
+    搬砖}
+\end{entrylist}
+
+
+\section{获奖经历}
+\begin{entrylist}
+  \entry
+    {14/10}
+    {最佳卖萌奖}
+    {校级}
+    {\emph{此处应有说明}\\}
+
+  \entry
+    {14/06}
+    {最逗逼奖}
+    {国家级}
+    {\emph{啊啊啊，黑猫警长
+    }}
+\end{entrylist}
+
+
+\newpage
+
+\begin{aside}
+~
+~
+~
+  \section{MBTI职业性格}
+  ~
+    \includegraphics[scale=0.5]{img/personal.png}
+    ~
+\end{aside}
+
+%\begin{entrylist}
+%entrylist默认是不分页的。我没有找到好的解决方案。我的做法是手动增加一个entrylist，反正简历不会太长。
+%\end{entrylist}
+~
+\section{论文发表}
+小明,小白,小粉,我.
+\textbf{车辆工程与软件工程的交叉研究}.\emph{某学报,1991,43(4),234-322}
+\\
+\section{其他信息}
+\begin{enumerate}
+\item 会做饭，会暖床，单身，性别男，爱好女。女神不从。
+\item 熟悉\LaTeX 排版技术。
+\end{enumerate}
+
+
+%%% This piece of code has been commented by Karol Kozio艂 due to biblatex errors. 
+% 
+%\printbibsection{article}{article in peer-reviewed journal}
+%\begin{refsection}
+%  \nocite{*}
+%  \printbibliography[sorting=chronological, type=inproceedings, title={international peer-reviewed conferences/proceedings}, notkeyword={france}, heading=subbibliography]
+%\end{refsection}
+%\begin{refsection}
+%  \nocite{*}
+%  \printbibliography[sorting=chronological, type=inproceedings, title={local peer-reviewed conferences/proceedings}, keyword={france}, heading=subbibliography]
+%\end{refsection}
+%\printbibsection{misc}{other publications}
+%\printbibsection{report}{research reports}
+
+\end{document}
